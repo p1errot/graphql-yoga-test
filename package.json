@@ -1,0 +1,28 @@
+{
+  "name": "workshop-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src",
+    "build": "NODE_ENV=PRODUCTION babel src -d dist --copy-files",
+    "start": "NODE_ENV=PRODUCTION node dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dot-env": "0.0.1",
+    "dotenv": "^8.0.0",
+    "graphql-yoga": "^1.18.0",
+    "mongoose": "^5.6.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.19.1"
+  }
+}
